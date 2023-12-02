@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2016",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictPropertyInitialization": true,
+    //
+    "declaration": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist",
+  },
+  "include": [
+    "src/*",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
