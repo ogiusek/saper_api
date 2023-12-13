@@ -1,5 +1,4 @@
 import mysql from "mysql2/promise";
-// const mysql = require('mysql2/promise');
 
 const connection = mysql.createConnection({
   host: `${process.env.DB_HOST}`,
@@ -7,6 +6,8 @@ const connection = mysql.createConnection({
   password: `${process.env.DB_PASSWORD}`,
   database: `${process.env.DB_NAME}`
 });
+
+setInterval(() => connection.then(db => db.query(`SELECT 1;`)), 60000);
 
 export { connection };
 export default connection;
